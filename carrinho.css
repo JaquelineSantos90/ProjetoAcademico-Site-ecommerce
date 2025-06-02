@@ -1,0 +1,231 @@
+/* ======== GERAL ======== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 4rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ======== CARRINHO ======== */
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.item-carrinho button {
+  margin: 5px 3px;
+  padding: 0.5rem 0.75rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.item-carrinho button:hover {
+  background-color: #c82333;
+}
+
+.btn-remover {
+  background-color: #e74c3c;
+  margin-top: 10px;
+}
+
+.btn-remover:hover {
+  background-color: #c0392b;
+}
+
+#cart-counter {
+  background: red;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.carrinho-total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* ======== FORMULÁRIO ======== */
+form {
+  margin-top: 2rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.50rem;
+  margin: 0.5rem 0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right, #00bfff, #005f75);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #374151;
+}
+
+#mensagem-sucesso {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(6, 151, 6);
+  font-weight: bold;
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.footer-links a {
+  color: #00bfff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* ======== ANIMAÇÃO ======== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 900px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  .item-carrinho {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .item-carrinho img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .item-carrinho button {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 0.75rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  #valor-total {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}

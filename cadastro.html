@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se | MCJtech</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+<nav class="navbar">
+  <!-- Esquerda: Logo + Nome -->
+  <div class="navbar-logo">
+    <img src="./src/Logoof.png" alt="Logo MCJ Tech" class="logo" />
+    <h2>Loja MCJ Tech</h2>
+  </div>
+
+  <!-- Direita: Links -->
+  <ul class="navbar-links">
+    <li><a href="loja.html">Início</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="carrinho.html">Carrinho</a></li>
+  </ul>
+</nav>
+<header class="hero">
+  <h2>Cadastre-se</h2>
+</header>
+
+<main> 
+  <section class="form-section">
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="data-nascimento">Data de Nascimento</label>
+      <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+      <label for="genero">Gênero</label>
+      <select id="genero" name="genero" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <label for="confirmar-senha">Confirmar Senha</label>
+      <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+</main>
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>Contato:</strong> (92) 7877-9977</p>
+      <p><strong>Email:</strong> contato@mcjtech.com.br</p>
+      <p><strong>Localização:</strong> Manaus - AM, Brasil</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Política de Reembolso</a>
+      <a href="#">Suporte</a>
+      <a href="#">Termos de Serviço</a>
+      <a href="#">Aviso Legal</a>
+    </div>
+
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <p>&copy; 2025 Loja MCJ Tech. Todos os direitos reservados.</p>
+  </footer>
+<script src="/cadastro.js"></script>
+</body>
+</html>

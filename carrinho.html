@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+<nav class="navbar">
+  <!-- Esquerda: Logo + Nome -->
+  <div class="navbar-logo">
+    <img src="./src/Logoof.png" alt="Logo MCJ Tech" class="logo" />
+    <h2> Carrinho <span id="cart-counter">0</span></h2>
+  </div>
+
+  <!-- Direita: Links -->
+  <ul class="navbar-links">
+    <li><a href="loja.html">Início</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="carrinho.html">Carrinho</a></li>
+  </ul>
+</nav>
+<main>
+    <h1>Itens no Carrinho</h1>
+    <div id="lista-carrinho"></div>
+    <p class="carrinho-total">Total: R$ <span id="valor-total">0.0</span></p>
+
+    <section class="checkout">
+      <h2>Finalizar Compra</h2>
+      <form id="checkout-form">
+        <label>Nome Completo:<br>
+          <input type="text" name="nome" required>
+        </label><br>
+        <label>Endereço:<br>
+          <input type="text" name="endereco" required>
+        </label><br>
+        <label>Método de Pagamento:<br>
+          <select name="pagamento" required>
+            <option value="">Escolha</option>
+            <option value="pix">PIX</option>
+            <option value="boleto">Boleto</option>
+            <option value="cartao">Cartão</option>
+          </select>
+        </label><br>
+        <button type="submit">Confirmar Compra</button>
+      </form>
+      <p id="mensagem-sucesso" style="display: none; color: green; font-weight: bold;">Compra realizada com sucesso!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <p><strong>Contato:</strong> (92) 7877-9977</p>
+      <p><strong>Email:</strong> contato@mcjtech.com.br</p>
+      <p><strong>Localização:</strong> Manaus - AM, Brasil</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Política de Reembolso</a>
+      <a href="#">Suporte</a>
+      <a href="#">Termos de Serviço</a>
+      <a href="#">Aviso Legal</a>
+    </div>
+
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <p>&copy; 2025 Loja MCJ Tech. Todos os direitos reservados.</p>
+  </footer>
+  <script src="carrinho.js"></script>
+</body>
+</html>
